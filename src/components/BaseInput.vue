@@ -6,6 +6,7 @@
       :value="modelValue"
       @input="updateValue"
       v-bind="$attrs"
+      :class="{ error }"
     />
     <BaseErrorMessage v-if="error">
       {{ error }}
