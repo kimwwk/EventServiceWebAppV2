@@ -1,11 +1,6 @@
 <template>
   <div>
-    <button
-      :class="buttonClass"
-      class="button"
-      v-bind="$attrs"
-      v-on="$listeners"
-    >
+    <button :class="buttonClass" class="button" v-bind="$attrs">
       <!-- v-on="$listeners" for inheriting event listeners like @click="sendMessage"-->
       <slot></slot>
     </button>
@@ -17,10 +12,10 @@ export default {
   inheritAttrs: false, // still using it becaz allow other button attrs like disable
   props: {
     buttonClass: {
-      type: String,
-    },
-  },
-};
+      type: String
+    }
+  }
+}
 </script>
 
 <style scoped>

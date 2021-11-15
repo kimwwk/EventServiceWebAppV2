@@ -5,12 +5,14 @@
 </template>
 
 <script>
-export default {
-  // props: {
-  //   id: {
-  //     type: [String, Number],
-  //     required: true
-  //   }
-  // }
-}
+export default {}
 </script>
+<style scoped>
+.errorMessage {
+  color: red;
+  font-size: 75%;
+}
+input + p.errorMessage {
+  margin-bottom: 24px;
+}
+</style>

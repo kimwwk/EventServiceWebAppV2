@@ -10,8 +10,6 @@
 
 <script>
 import { useField } from 'vee-validate'
-import BaseInput from '@/components/BaseInput.vue'
-import BaseButton from '@/components/BaseInput.vue'
 
 export default {
   setup() {
@@ -32,10 +30,6 @@ export default {
       email: email.value,
       emailError: email.errorMessage
     }
-  },
-  components: {
-    BaseInput,
-    BaseButton
   }
 }
 </script>
